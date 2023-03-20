@@ -1,84 +1,49 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+
+//1. cursor-pointer to be put in parent class
+//2. Make a separate folder for the links to be put in
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="h-screen w-screen bg-[url('/img/background.jpg')] bg-no-repeat bg-cover bg-center bg-fixed pointer-events-none">
       <Head>
-        <title>Next.js + TailwindCSS</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap">
+        </link>
       </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-4xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://replit.com/@ErikoXDev/Nextjs-TailwindCSS?v=1">
-            Next.js + TailwindCSS!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://replit.com/site/hosting"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Your repl is deployed automatically on replit.com!
-            </p>
-          </a>
+      <div className='absolute top-1/2 left-1/2 -translate-x-1/2'>
+        <div className='text-6xl font-unbounded slideInLeft'>
+          <span className="textRightToLeft">KONN</span><span className='textLeftToRight'>EXIONS</span>
         </div>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://replit.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/replit.svg" alt="Replit Logo" width={72} height={16} />
-        </a>
-      </footer>
+      </div>
+      <div className='absolute top-3/4 left-1/2 -translate-x-1/2 translate-y-1/2 pointer-events-auto cursor-pointer'>
+        <div className='bg-yellow-500 rounded-full text-center text-base p-2 px-8 pointer-events-auto hover:bg-yellow-600 ease-linear duration-100'>
+          <Link href="#"><a><h1>ABOUT US</h1></a></Link>
+        </div>
+      </div>
+      <div className='absolute h-screen w-screen'>
+        <div className="cursor-pointer absolute bottom-0 right-0 pr-4 pb-24 mb-8 pointer-events-auto">
+          <Link href="https://www.instagram.com/kiitkonnexions/">
+            <a><Image src="/img/insta.png" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreepngimg.com%2Fpng%2F62837-instagram-icons-photography-computer-logo-icon&psig=AOvVaw3hvc6dlJtWWpI_qlcHIFv-&ust=1679321552422000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMiwxbeW6P0CFQAAAAAdAAAAABBZ" width={50} height={50} /></a>
+          </Link>
+        </div>
+      </div>
+      <div className='absolute h-screen w-screen'>
+        <div className="cursor-pointer absolute bottom-0 right-0 pr-4 pb-12 mb-8 pointer-events-auto">
+          <Link href="https://www.facebook.com/kiitkonnexions/">
+            <a><Image src="/img/facebook.jpg" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-library.com%2Ficon%2Ffacebook-icon-black-and-white-3.html&psig=AOvVaw2UsGSF5qusZ7oe9VdU-K5g&ust=1679323101381000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJiK-5mc6P0CFQAAAAAdAAAAABAZ" width={50} height={50} /></a>
+          </Link>
+        </div>
+      </div>
+      <div className='absolute h-screen w-screen'>
+        <div className="cursor-pointer absolute right-0 bottom-0 pr-4 mb-8 pointer-events-auto">
+          <Link href="https://twitter.com/konnexions_kiit">
+            <a><Image src="/img/twitter.png" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F578712620849900143%2F&psig=AOvVaw0IiCrUwKTj49aMlkaWcs5Y&ust=1679323205422000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCLysuc6P0CFQAAAAAdAAAAABAE" width={50} height={50} /></a>
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }
