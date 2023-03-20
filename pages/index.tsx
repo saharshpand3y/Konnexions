@@ -31,9 +31,9 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className='absolute h-screen w-screen'>
-        <div className="cursor-pointer absolute bottom-0 right-0 pr-4 pb-12 mb-8 pointer-events-auto">
+        <div className="cursor-pointer absolute bottom-0 right-0 pr-6 pb-14 mb-8 pointer-events-auto">
           <Link href="https://www.facebook.com/kiitkonnexions/">
-            <a><Image src="/img/facebook.jpg" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-library.com%2Ficon%2Ffacebook-icon-black-and-white-3.html&psig=AOvVaw2UsGSF5qusZ7oe9VdU-K5g&ust=1679323101381000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJiK-5mc6P0CFQAAAAAdAAAAABAZ" width={50} height={50} /></a>
+            <a><Image src="/img/facebook.jpg" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-library.com%2Ficon%2Ffacebook-icon-black-and-white-3.html&psig=AOvVaw2UsGSF5qusZ7oe9VdU-K5g&ust=1679323101381000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJiK-5mc6P0CFQAAAAAdAAAAABAZ" width={40} height={40} /></a>
           </Link>
         </div>
       </div>
