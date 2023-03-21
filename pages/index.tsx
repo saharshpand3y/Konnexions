@@ -14,22 +14,22 @@ const Home: NextPage = () => {
         </link>
         <nav className='absolute top-2 right-0 text-xl'>
           <ul className='flex'>
-            <li className="mr-6">
+            <li className="mr-6 bg-blue-500 rounded-full text-center text-base px-2 py-1 text-white hover:bg-white hover:text-blue-500 ease-in duration-100">
               <Link href='/Blog/'>
                 <a>Blog</a>
               </Link>
             </li>
-            <li className="mr-6">
+            <li className="mr-6 bg-blue-500 rounded-full text-center text-base px-2 py-1 text-white hover:bg-white hover:text-blue-500 ease-in duration-100">
               <Link href="/Events/">
                 <a>Events</a>
               </Link>
             </li>
-            <li className="mr-6">
+            <li className="mr-6 bg-blue-500 rounded-full text-center text-base px-2 py-1 text-white hover:bg-white hover:text-blue-500 ease-in duration-100">
               <Link href="/Team/">
                 <a>Team</a>
               </Link>
             </li>
-            <li className="mr-6">
+            <li className="mr-6 bg-blue-500 rounded-full text-center text-base px-2 py-1 text-white hover:bg-white hover:text-blue-500 ease-in duration-100">
               <Link href="/Contact/">
                 <a>Contact</a>
               </Link>
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className='absolute top-3/4 left-1/2 -translate-x-1/2 translate-y-1/2 pointer-events-auto cursor-pointer'>
-        <div className='bg-yellow-500 rounded-full text-center text-base p-2 px-8 pointer-events-auto hover:bg-yellow-600 ease-linear duration-100'>
+        <div className='bg-yellow-500 rounded-full text-center text-base p-2 px-8 pointer-events-auto hover:bg-yellow-600 ease-in duration-100'>
           <Link href="#"><a><h1>ABOUT US</h1></a></Link>
         </div>
       </div>
