@@ -12,6 +12,30 @@ const Home: NextPage = () => {
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap">
         </link>
+        <nav className='absolute top-2 right-0 text-xl'>
+          <ul className='flex'>
+            <li className="mr-6">
+              <Link href='/Blog/'>
+                <a>Blog</a>
+              </Link>
+            </li>
+            <li className="mr-6">
+              <Link href="/Events/">
+                <a>Events</a>
+              </Link>
+            </li>
+            <li className="mr-6">
+              <Link href="/Team/">
+                <a>Team</a>
+              </Link>
+            </li>
+            <li className="mr-6">
+              <Link href="/Contact/">
+                <a>Contact</a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </Head>
       <div className='absolute top-1/2 left-1/2 -translate-x-1/2'>
         <div className='text-6xl font-unbounded slideInLeft'>
