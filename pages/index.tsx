@@ -12,6 +12,30 @@ const Home: NextPage = () => {
       <Head>
         <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap">
         </link>
+        <nav className='absolute top-2 right-0 text-xl'>
+          <ul className='flex'>
+            <li className="mr-6 bg-blue-500 rounded-full text-center text-base px-2 py-1 text-white hover:bg-white hover:text-blue-500 ease-in duration-100">
+              <Link href='/Blog/'>
+                <a>Blog</a>
+              </Link>
+            </li>
+            <li className="mr-6 bg-blue-500 rounded-full text-center text-base px-2 py-1 text-white hover:bg-white hover:text-blue-500 ease-in duration-100">
+              <Link href="/Events/">
+                <a>Events</a>
+              </Link>
+            </li>
+            <li className="mr-6 bg-blue-500 rounded-full text-center text-base px-2 py-1 text-white hover:bg-white hover:text-blue-500 ease-in duration-100">
+              <Link href="/Team/">
+                <a>Team</a>
+              </Link>
+            </li>
+            <li className="mr-6 bg-blue-500 rounded-full text-center text-base px-2 py-1 text-white hover:bg-white hover:text-blue-500 ease-in duration-100">
+              <Link href="/Contact/">
+                <a>Contact</a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
       </Head>
       <div className='absolute top-1/2 left-1/2 -translate-x-1/2'>
         <div className='text-6xl font-unbounded slideInLeft'>
@@ -19,7 +43,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className='absolute top-3/4 left-1/2 -translate-x-1/2 translate-y-1/2 pointer-events-auto cursor-pointer'>
-        <div className='bg-yellow-500 rounded-full text-center text-base p-2 px-8 pointer-events-auto hover:bg-yellow-600 ease-linear duration-100'>
+        <div className='bg-yellow-500 rounded-full text-center text-base p-2 px-8 pointer-events-auto hover:bg-yellow-600 ease-in duration-100'>
           <Link href="#"><a><h1>ABOUT US</h1></a></Link>
         </div>
       </div>
@@ -31,9 +55,9 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className='absolute h-screen w-screen'>
-        <div className="cursor-pointer absolute bottom-0 right-0 pr-4 pb-12 mb-8 pointer-events-auto">
+        <div className="cursor-pointer absolute bottom-0 right-0 pr-6 pb-14 mb-8 pointer-events-auto">
           <Link href="https://www.facebook.com/kiitkonnexions/">
-            <a><Image src="/img/facebook.jpg" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-library.com%2Ficon%2Ffacebook-icon-black-and-white-3.html&psig=AOvVaw2UsGSF5qusZ7oe9VdU-K5g&ust=1679323101381000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJiK-5mc6P0CFQAAAAAdAAAAABAZ" width={50} height={50} /></a>
+            <a><Image src="/img/facebook.jpg" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficon-library.com%2Ficon%2Ffacebook-icon-black-and-white-3.html&psig=AOvVaw2UsGSF5qusZ7oe9VdU-K5g&ust=1679323101381000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJiK-5mc6P0CFQAAAAAdAAAAABAZ" width={40} height={40} /></a>
           </Link>
         </div>
       </div>
